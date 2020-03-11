@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina|Work+Sans&display=swap");
+@import url("https://use.typekit.net/jit4aly.css");
+body {
+  font-family: serif; }
+
+h1, h2, h3 {
+  font-family: url("african.ttf"); }

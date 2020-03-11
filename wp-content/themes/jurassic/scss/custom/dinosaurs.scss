@@ -1,0 +1,146 @@
+#dino {
+  min-height: 100vh;
+  background-color: #EAE0B9;
+  padding: 15px;
+
+  h2 {
+    color: $primary;
+    font-size: 2.5em;
+  }
+
+  .description-box {
+    background-color: #FFFAE7;
+    padding: 24px;
+    h2 {
+      color: $primary;
+      font-size: 2em;
+    }
+  }
+}
+
+// dino slider
+.swiper-container {
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.5;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transform: scale(.9);
+  transition: 0.2s ease-in;
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(2);
+  transition: 0.2s ease-in;
+}
+
+.swiper-button-prev:after {
+  content: ''!important;
+}
+// end dino slider
+
+
+.dino {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#dino-1 {
+  background-image: url("../img/dino1.png");
+}
+
+#dino-2 {
+  background-image: url("../img/dino2.png");
+}
+
+#dino-3 {
+  background-image: url("../img/dino3.png");
+}
+
+#dino_1{
+  display: flex;
+}
+#dino_2{
+  display: none;
+} 
+#dino_3{
+  display: none;
+}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+  #dino {
+    min-height: 100vh;
+    background-color: #EAE0B9;
+
+    h2 {
+      color: $primary;
+      font-size: 5em;
+    }
+
+    .dino-title {
+      font-size: 3em;
+    }
+
+
+
+    .description-box {
+      background-color: #FFFAE7;
+      padding: 24px;
+    }
+  }
+
+//dino slider
+  .swiper-container {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .swiper-slide {
+    transform: scale(.7);
+  }
+  .swiper-button-prev:after {
+    content: ''!important;
+  }
+  .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+  }
+
+  //end dino slider
+//custom dino
+  #dino-1.swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1)!important;
+    transition: 0.2s ease-in;
+  }
+
+  #dino-1.swiper-slide {
+    opacity: 1;
+    transform: scale(.5)!important;
+    transition: 0.2s ease-in;
+    opacity: 0.5;
+  }
+  //end custom dino
+}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}

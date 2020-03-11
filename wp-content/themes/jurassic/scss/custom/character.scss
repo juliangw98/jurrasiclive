@@ -1,0 +1,64 @@
+#characters {
+  min-height: 100vh;
+
+  h2 {
+    color: $primary;
+    font-size: 2.5em;
+  }
+
+  .carousel-item {
+    display: flex;
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
+
+
+
+.characters {
+  margin-left: 15px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #B6A259;
+}
+
+#character-img-1 {
+  background-image: url("../img/prof.jpg");
+}
+
+#character-img-2 {
+  background-image: url("../img/alan.jpg");
+}
+
+#character-img-3 {
+  background-image: url("../img/nerdy.png");
+}
+
+.carousel {
+  max-width: 100%;
+}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+
+  #characters {
+    h2 {
+      font-size: 4em;
+    }
+
+    .carousel-item {
+      div {
+        display: flex;
+        align-self: flex-end;
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}

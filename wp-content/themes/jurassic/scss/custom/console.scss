@@ -1,0 +1,88 @@
+#park {
+  height: 100vh;
+}
+
+#console-img {
+  height: 40vh;
+  background-size: cover;
+
+  div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    }
+  #console-img-island {
+    display: block;
+    background-color: red;
+  }
+
+  #console-img-movie {
+    display: none;
+    background-color: yellow;
+      background-position: left;
+
+  }
+
+  #console-img-hotel {
+    display: none;
+    background-color: green;
+
+  }
+
+  #console-img-dining {
+    display: none;
+    background-color: purple;
+
+  }
+
+  #console-img-activities {
+    display: none;
+    background-color: pink;
+
+  }
+}
+
+#console {
+  border: 5px solid #B6A259;
+  padding: 24px;
+  background-color: #F8F1D4;
+
+  #display {
+    overflow: scroll;
+    background-color: white;
+    padding: 16px;
+    border: 2px solid #B6A259;
+    height: 25vh;
+
+    .active {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .active {
+    background-color: $primary;
+    border: 0;
+    color: white;
+    padding-top: 10px;
+  }
+}
+@include media-breakpoint-up(xs) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {
+  #console-img {
+    height: 100vh;
+  }
+
+  #console {
+    height: 100vh;
+    padding: 24px;
+
+    #display {
+      height: 40vh;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {}

@@ -1,0 +1,35 @@
+#menu {
+  padding-top: 10vh;
+  padding-bottom: 10vh; }
+  #menu ul {
+    list-style-type: none;
+    padding-left: 0px; }
+    #menu ul li {
+      font-size: 1.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  #menu .noodles {
+    background-image: url(../images/padthai.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 40vh;
+    width: 100%; }
+  #menu .curry {
+    background-image: url(../images/thai.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 40vh;
+    width: 100%; }
+  #menu .rice {
+    background-image: url(../images/rice.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 40vh;
+    width: 100%; }
+  #menu .wok {
+    background-image: url(../images/wok.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 40vh;
+    width: 100%; }
